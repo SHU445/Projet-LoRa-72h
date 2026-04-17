@@ -2,32 +2,35 @@
 
 Regrouper diagrammes projet:
 - smartphone avec application de messagerie Bluetooth,
-- balise LoRa basee sur ESP32-S3 LoRa + Bluetooth,
-- systeme d'alternance d'antennes (omnidirectionnelle / directionnelle),
-- Arduino Uno pour balayage et rotation de l'antenne directionnelle.
+- balise basee sur ESP32-S3 LoRa,
+- Arduino Uno pour balayage et rotation,
+- systeme d'alternance entre antenne directionnelle et omnidirectionnelle,
+- alimentation batterie pour les sous-systemes embarques.
 
 ## 1) Diagramme de cas d'utilisation
 
 ```mermaid
 flowchart LR
-  rU["Utilisateur"]:::role
-  rAPP["<< service>> Application mobile"]:::role
-  rBT["<< service>> Balise LoRa ESP32-S3 + Bluetooth"]:::role
-  rARD["<< service>> Arduino Uno (rotation/balayage)"]:::role
-  rANT["Systeme d'antennes (omni + directionnelle)"]:::role
+  rU["👤 Utilisateur"]:::role
+  rAPP["👤 << service>>\nApplication mobile"]:::role
+  rBAL["👤 << service>>\nBalise LoRa"]:::role
+  rESP["👤 << service>>\nESP32-S3 LoRa"]:::role
+  rARD["👤 << service>>\nArduino Uno"]:::role
+  rALT["👤 << service>>\nSysteme d'alternance"]:::role
 
   subgraph S["Systeme de communication LoRa/Bluetooth"]
     direction TB
-    ucConnect([Se connecter a la balise])
-    ucSend([Envoyer un message])
-    ucReceive([Recevoir un message])
-    ucStatus([Consulter le statut de connexion])
-    ucData([Consulter des donnees de la balise])
-    ucSelectAntenna([Selectionner le type d'antenne])
-    ucScan([Balayer / orienter l'antenne directionnelle])
+    ucConnect([Se connecter a la balise Bluetooth])
+    ucSend([Envoyer un message texte])
+    ucReceive([Recevoir un message texte])
+    ucStatus([Consulter l'etat du lien])
+    ucData([Consulter des donnees balise])
+    ucSelectAntenna([Choisir antenne Omni/Dir])
+    ucScan([Lancer balayage directionnel])
 
     ucSend -. include .-> ucConnect
     ucReceive -. include .-> ucConnect
+    ucStatus -. include .-> ucConnect
     ucData -. include .-> ucConnect
     ucSelectAntenna -. include .-> ucData
     ucScan -. include .-> ucSelectAntenna
@@ -46,16 +49,20 @@ flowchart LR
   ucStatus --- rAPP
   ucData --- rAPP
 
-  ucConnect --- rBT
-  ucSend --- rBT
-  ucReceive --- rBT
-  ucStatus --- rBT
-  ucData --- rBT
-  ucSelectAntenna --- rBT
-  ucScan --- rBT
+  ucConnect --- rBAL
+  ucSend --- rBAL
+  ucReceive --- rBAL
+  ucStatus --- rBAL
+
+  ucConnect --- rESP
+  ucSend --- rESP
+  ucReceive --- rESP
+  ucData --- rESP
+  ucSelectAntenna --- rESP
+  ucScan --- rESP
 
   ucScan --- rARD
-  ucScan --- rANT
+  ucSelectAntenna --- rALT
 
   classDef role stroke-width:0px;
 ```
@@ -64,17 +71,16 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    EX0[EX-00 Systeme de communication LoRa/Bluetooth]
+    EX0[EX-00 Systeme balise LoRa communicante]
 
-    EX1[EX-01 Communication BT smartphone <-> balise]
-    EX2[EX-02 Envoi de messages texte]
-    EX3[EX-03 Reception de messages texte]
-    EX4[EX-04 Affichage de l'etat de connexion]
-    EX5[EX-05 Disponibilite mode ecoute/visibilite]
-    EX6[EX-06 Consultation de donnees statut balise]
-    EX7[EX-07 Selection antenne omni/directionnelle]
-    EX8[EX-08 Balayage + rotation par Arduino Uno]
-    EX9[EX-09 Fonctionnement embarque robuste]
+    EX1[EX-01 Communication Bluetooth smartphone <-> balise]
+    EX2[EX-02 Echange de messages texte bidirectionnel]
+    EX3[EX-03 Affichage des etats de connexion]
+    EX4[EX-04 Consultation de donnees de la balise]
+    EX5[EX-05 Choix antenne directionnelle ou omnidirectionnelle]
+    EX6[EX-06 Balayage/rotation assures par Arduino Uno]
+    EX7[EX-07 Alimentation autonome par batterie]
+    EX8[EX-08 Architecture robuste en environnement exterieur]
 
     EX0 --> EX1
     EX0 --> EX2
@@ -84,21 +90,22 @@ flowchart TD
     EX0 --> EX6
     EX0 --> EX7
     EX0 --> EX8
-    EX0 --> EX9
 
     V1[(Validation: test appairage BT)]
-    V2[(Validation: test message app -> balise)]
-    V3[(Validation: test reception balise -> app)]
-    V4[(Validation: test etats NOT_CONNECTED/LISTENING/CONNECTING/CONNECTED)]
+    V2[(Validation: test envoi/rception messages)]
+    V3[(Validation: test etats NOT_CONNECTED/LISTENING/CONNECTING/CONNECTED)]
+    V4[(Validation: test consultation donnees balise)]
     V5[(Validation: test alternance antennes)]
-    V6[(Validation: test rotation/balayage)]
+    V6[(Validation: test rotation/balayage Arduino)]
+    V7[(Validation: test autonomie batterie)]
 
     EX1 -.verifiee par.-> V1
     EX2 -.verifiee par.-> V2
     EX3 -.verifiee par.-> V3
     EX4 -.verifiee par.-> V4
-    EX7 -.verifiee par.-> V5
-    EX8 -.verifiee par.-> V6
+    EX5 -.verifiee par.-> V5
+    EX6 -.verifiee par.-> V6
+    EX7 -.verifiee par.-> V7
 ```
 
 ## 3) Diagramme de sequence (envoi d'un message)
@@ -107,16 +114,18 @@ flowchart TD
 sequenceDiagram
     actor U as Utilisateur
     participant APP as Application mobile
-    participant CTRL as ConnectionController
-    participant BT as Bluetooth HC-05/ESP32
-    participant ARD as Arduino Uno
+    participant ESP as ESP32-S3 LoRa (balise)
+    participant ARD as Arduino Uno (rotation)
+    participant ALT as Systeme d'alternance
+    participant ANT as Antenne choisie
 
-    U->>APP: Saisit puis envoie un message
-    APP->>CTRL: sendMessage(message)
-    CTRL->>BT: write(message + "\\n")
-    BT->>ARD: Transmet trame serie Bluetooth
-    ARD->>ARD: Lit buffer jusqu'a fin '\\n'
-    ARD-->>U: Affiche "Recu: <message>" (moniteur serie + LED)
+    U->>APP: Choisit antenne + saisit message
+    APP->>ESP: Trame Bluetooth (message + commande)
+    ESP->>ALT: Balayage du signal
+    ALT->>ANT: Active antenne Dir
+    ARD->>ANT: Rotation / orientation
+    ESP-->>APP: Ack + statut liaison + donnees
+    APP-->>U: Affichage message et statut
 ```
 
 ## 4) Diagramme de blocs (BDD)
@@ -127,6 +136,7 @@ classDiagram
       +communiquer()
       +superviserConnexion()
       +selectionnerAntenne()
+      +alimenterSousSystemes()
     }
 
     class Smartphone {
@@ -135,9 +145,8 @@ classDiagram
     }
 
     class Balise {
-      +ESP32S3_LoRa_BT
-      +ModuleBluetooth
-      +SystemeAlternanceAntenne
+      +ESP32S3_LoRa
+      +Bluetooth
     }
 
     class ArduinoUno {
@@ -145,16 +154,24 @@ classDiagram
       +rotation()
     }
 
+    class SystemeAlternanceAntennes
+    class SystemeRotationAntennes
     class AntenneOmni
     class AntenneDirectionnelle
+    class Batterie
 
     SystemeLoRa72h *-- Smartphone
     SystemeLoRa72h *-- Balise
     SystemeLoRa72h *-- ArduinoUno
-    Balise *-- AntenneOmni
-    Balise *-- AntenneDirectionnelle
-    Balise --> ArduinoUno : commande orientation
+    SystemeLoRa72h *-- SystemeAlternanceAntennes
+    SystemeLoRa72h *-- SystemeRotationAntennes
+    SystemeLoRa72h *-- Batterie
+    SystemeAlternanceAntennes *-- AntenneOmni
+    SystemeAlternanceAntennes *-- AntenneDirectionnelle
     Smartphone --> Balise : liaison Bluetooth
+    Balise --> ArduinoUno : commandes
+    Balise --> SystemeAlternanceAntennes
+    ArduinoUno --> SystemeRotationAntennes
 ```
 
 ## 5) Diagramme de bloc interne (IBD simplifie)
@@ -167,43 +184,58 @@ flowchart LR
         UI <--> SVC
     end
 
-    subgraph B[Balise]
-        ESP[ESP32-S3 LoRa + BT]
-        SW[Commutateur d'antenne]
-        AO[Antenne omni]
-        AD[Antenne directionnelle]
-        ESP --> SW
-        SW --> AO
-        SW --> AD
+    subgraph B[Balise/Embarque]
+        ESP[ESP32-S3 LoRa]
+        BT[Bluetooth]
+        ALT[Systeme d'alternance des antennes]
+        ROT[Systeme rotation des antennes]
+        AO[Antenne Omni]
+        AD[Antenne Dir]
+        BAT[Batterie]
+        ESP <--> BT
+        ESP --> ALT
+        ALT --> AO
+        ALT --> AD
+        ESP --> ROT
+        ROT --> AD
+        BAT --> ESP
+        BAT --> ALT
+        BAT --> ROT
     end
 
     subgraph A[Arduino Uno]
         MOT[Pilotage rotation]
         SCAN[Balayage]
+        BAT2[Alim depuis batterie]
+        BAT2 --> MOT
+        BAT2 --> SCAN
     end
 
-    SVC <--> ESP
+    SVC <--> BT
     ESP <--> MOT
     MOT --> SCAN
-    SCAN --> AD
+    SCAN --> ROT
 ```
 
 ## 6) Diagramme d'etat (connexion Bluetooth)
 
 ```mermaid
 stateDiagram-v2
-    [*] --> NOT_CONNECTED
+    [*] --> INIT
+    INIT --> NOT_CONNECTED: demarrage service BT
 
-    NOT_CONNECTED --> LISTENING: prepareForAccept()
-    NOT_CONNECTED --> CONNECTING: connect(device)
+    NOT_CONNECTED --> LISTENING: mode visible / prepareForAccept()
+    NOT_CONNECTED --> CONNECTING: tentative connexion sortante
 
     LISTENING --> CONNECTED: connexion entrante acceptee
-    CONNECTING --> CONNECTED: socket connectee
+    CONNECTING --> CONNECTED: appairage + socket OK
+    CONNECTED --> ANTENNA_SELECTED: commande choix antenne
+    ANTENNA_SELECTED --> SCANNING: antenne directionnelle + balayage
+    ANTENNA_SELECTED --> CONNECTED: antenne omni
+    SCANNING --> CONNECTED: orientation terminee
 
     CONNECTING --> NOT_CONNECTED: echec connexion
-    CONNECTED --> NOT_CONNECTED: disconnect()/connectionLost()
-    LISTENING --> NOT_CONNECTED: stop()/cancel()
+    CONNECTED --> NOT_CONNECTED: perte lien / deconnexion
+    LISTENING --> NOT_CONNECTED: annulation
+    NOT_CONNECTED --> [*]: arret systeme
 ```
-
-
-RAVAVA JE VAIS ME TROUER LE DERCHE
