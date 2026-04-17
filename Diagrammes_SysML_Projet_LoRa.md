@@ -1,6 +1,6 @@
 # Diagrammes SysML - Projet LoRa 72h
 
-Ce document regroupe les diagrammes demandes pour le projet:
+Regrouper diagrammes projet:
 - smartphone avec application de messagerie Bluetooth,
 - balise LoRa basee sur ESP32-S3 LoRa + Bluetooth,
 - systeme d'alternance d'antennes (omnidirectionnelle / directionnelle),
