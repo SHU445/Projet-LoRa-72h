@@ -10,42 +10,54 @@ Regrouper diagrammes projet:
 
 ```mermaid
 flowchart LR
-    U[Utilisateur]
-    A[Application mobile]
-    B[Balise LoRa ESP32-S3 + BT]
-    R[Arduino Uno + rotation]
+  rU["👤 Utilisateur"]:::role
+  rAPP["👤 << service>> Application mobile"]:::role
+  rBT["👤 << service>> Balise LoRa ESP32-S3 + Bluetooth"]:::role
+  rARD["👤 << service>> Arduino Uno (rotation/balayage)"]:::role
+  rANT["👤 Systeme d'antennes (omni + directionnelle)"]:::role
 
-    UC1((Se connecter a la balise))
-    UC2((Envoyer un message))
-    UC3((Recevoir un message))
-    UC4((Consulter statut connexion))
-    UC5((Consulter donnees de la balise))
-    UC6((Selectionner type d'antenne))
-    UC7((Balayer/orienter antenne directionnelle))
+  subgraph S["Systeme de communication LoRa/Bluetooth"]
+    direction TB
+    ucConnect([Se connecter a la balise])
+    ucSend([Envoyer un message])
+    ucReceive([Recevoir un message])
+    ucStatus([Consulter le statut de connexion])
+    ucData([Consulter des donnees de la balise])
+    ucSelectAntenna([Selectionner le type d'antenne])
+    ucScan([Balayer / orienter l'antenne directionnelle])
+    
+    ucSend -. include .-> ucConnect
+    ucReceive -. include .-> ucConnect
+    ucData -. include .-> ucConnect
+    ucSelectAntenna -. include .-> ucData
+    ucScan -. include .-> ucSelectAntenna
+  end
 
-    U --> UC1
-    U --> UC2
-    U --> UC3
-    U --> UC4
-    U --> UC5
-    U --> UC6
+  rU --- ucConnect
+  rU --- ucSend
+  rU --- ucReceive
+  rU --- ucStatus
+  rU --- ucData
+  rU --- ucSelectAntenna
 
-    A --> UC1
-    A --> UC2
-    A --> UC3
-    A --> UC4
-    A --> UC5
-    A --> UC6
+  ucConnect --- rAPP
+  ucSend --- rAPP
+  ucReceive --- rAPP
+  ucStatus --- rAPP
+  ucData --- rAPP
 
-    B --> UC1
-    B --> UC2
-    B --> UC3
-    B --> UC4
-    B --> UC5
-    B --> UC6
-    B --> UC7
+  ucConnect --- rBT
+  ucSend --- rBT
+  ucReceive --- rBT
+  ucStatus --- rBT
+  ucData --- rBT
+  ucSelectAntenna --- rBT
+  ucScan --- rBT
 
-    R --> UC7
+  ucScan --- rARD
+  ucScan --- rANT
+
+  classDef role stroke-width:0px;
 ```
 
 ## 2) Diagramme des exigences
