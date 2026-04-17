@@ -214,7 +214,7 @@ flowchart LR
     SVC <--> BT
     ESP <--> MOT
     MOT --> SCAN
-    SCAN --> ROT
+    SCAN --> AO
 ```
 
 ## 6) Diagramme d'etat (connexion Bluetooth)
