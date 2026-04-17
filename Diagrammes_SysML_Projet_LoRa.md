@@ -10,11 +10,11 @@ Regrouper diagrammes projet:
 
 ```mermaid
 flowchart LR
-  rU["👤 Utilisateur"]:::role
-  rAPP["👤 << service>> Application mobile"]:::role
-  rBT["👤 << service>> Balise LoRa ESP32-S3 + Bluetooth"]:::role
-  rARD["👤 << service>> Arduino Uno (rotation/balayage)"]:::role
-  rANT["👤 Systeme d'antennes (omni + directionnelle)"]:::role
+  rU["Utilisateur"]:::role
+  rAPP["<< service>> Application mobile"]:::role
+  rBT["<< service>> Balise LoRa ESP32-S3 + Bluetooth"]:::role
+  rARD["<< service>> Arduino Uno (rotation/balayage)"]:::role
+  rANT["Systeme d'antennes (omni + directionnelle)"]:::role
 
   subgraph S["Systeme de communication LoRa/Bluetooth"]
     direction TB
@@ -25,7 +25,7 @@ flowchart LR
     ucData([Consulter des donnees de la balise])
     ucSelectAntenna([Selectionner le type d'antenne])
     ucScan([Balayer / orienter l'antenne directionnelle])
-    
+
     ucSend -. include .-> ucConnect
     ucReceive -. include .-> ucConnect
     ucData -. include .-> ucConnect
