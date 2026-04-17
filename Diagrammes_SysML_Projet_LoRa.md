@@ -193,13 +193,5 @@ stateDiagram-v2
     LISTENING --> NOT_CONNECTED: stop()/cancel()
 ```
 
----
 
-### Hypotheses retenues
-- Les flux ci-dessus representent la version actuelle du code Android (`LoRa-app`) et du script Arduino de reception Bluetooth.
-- Le detail FigJam disponible confirme l'architecture smartphone + balise ESP32-S3 LoRa/Bluetooth + Arduino Uno pour rotation/balayage.
-
-### A ajuster si besoin
-- Noms exacts des exigences (format `REQ-xx` de ton prof),
-- niveau de detail attendu (STI2D: simplifie ou complet avec traces/derive),
-- sequence alternative "connexion entrante" au lieu de "envoi message".
+RAVAVA JE VAIS ME TROUER LE DERCHE
