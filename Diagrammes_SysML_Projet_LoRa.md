@@ -116,13 +116,13 @@ sequenceDiagram
     participant APP as Application mobile
     participant ESP as ESP32-S3 LoRa (balise)
     participant ARD as Arduino Uno (rotation)
-    participant ALT as Systeme d'alternance
+    participant SW as Systeme d'alternance
     participant ANT as Antenne choisie
 
     U->>APP: Choisit antenne + saisit message
     APP->>ESP: Trame Bluetooth (message + commande)
-    ESP->>ALT: Balayage du signal
-    ALT->>ANT: Active antenne Dir
+    ESP->>SW: Balayage du signal
+    SW->>ANT: Active antenne Dir
     ARD->>ANT: Rotation / orientation
     ESP-->>APP: Ack + statut liaison + donnees
     APP-->>U: Affichage message et statut
