@@ -38,8 +38,6 @@ flowchart LR
   rU --- rAPP
   rAPP --- rESP
 
-  ucConnect --- rAPP
-
   ucSend --- rESP
   uStatus --rESP
   ucReceive --- rESP
