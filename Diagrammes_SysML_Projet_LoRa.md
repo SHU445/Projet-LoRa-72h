@@ -44,12 +44,12 @@ flowchart LR
   ucStatus --- rAPP
   ucData --- rAPP
 
-  ucConnect --- rBAL
+
   ucSend --- rBAL
   ucReceive --- rBAL
   ucStatus --- rBAL
 
-  ucConnect --- rESP
+
   ucSend --- rESP
   ucReceive --- rESP
   ucData --- rESP
