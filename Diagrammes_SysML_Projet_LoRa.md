@@ -40,8 +40,8 @@ flowchart LR
 
   ucSend --- rESP
   uStatus --rESP
-  ucReceive --- rESP
-  ucData --- rU
+  ucReceive --- rU
+  ucData --- rESP
   ucSelectAntenna --- rESP
 
 
