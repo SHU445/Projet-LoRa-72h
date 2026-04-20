@@ -13,12 +13,12 @@ Regrouper diagrammes projet:
 flowchart LR
   rU["Utilisateur"]:::role
   rAPP["<< service>>\nApplication mobile"]:::role
-  rBAL["<< service>>\nBalise LoRa"]:::role
+
   rESP["<< service>>\nESP32-S3 LoRa"]:::role
   rARD["<< service>>\nArduino Uno"]:::role
   rALT["<< service>>\nSysteme d'alternance"]:::role
 
-  subgraph S["Systeme de communication LoRa/Bluetooth"]
+  subgraph S["Balise LoRa"]
     direction TB
     ucConnect([Se connecter a la balise Bluetooth])
     ucSend([Envoyer un message texte])
@@ -37,6 +37,7 @@ flowchart LR
   end
 
   rU --- rAPP
+  rAPP --- rESP
 
   ucConnect --- rAPP
   ucSend --- rAPP
