@@ -13,7 +13,6 @@ Regrouper diagrammes projet:
 flowchart LR
   rU["Utilisateur"]:::role
   rAPP["<< service>>\nApplication mobile"]:::role
-
   rESP["<< service>>\nESP32-S3 LoRa"]:::role
   rARD["<< service>>\nArduino Uno"]:::role
   rALT["<< service>>\nSysteme d'alternance"]:::role
@@ -40,14 +39,6 @@ flowchart LR
   rAPP --- rESP
 
   ucConnect --- rAPP
-  ucSend --- rAPP
-  ucReceive --- rAPP
-  ucStatus --- rAPP
-  ucData --- rAPP
-
-
-
-
 
   ucSend --- rESP
   uStatus --rESP
