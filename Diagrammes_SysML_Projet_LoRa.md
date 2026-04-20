@@ -11,12 +11,12 @@ Regrouper diagrammes projet:
 
 ```mermaid
 flowchart LR
-  rU["👤 Utilisateur"]:::role
-  rAPP["👤 << service>>\nApplication mobile"]:::role
-  rBAL["👤 << service>>\nBalise LoRa"]:::role
-  rESP["👤 << service>>\nESP32-S3 LoRa"]:::role
-  rARD["👤 << service>>\nArduino Uno"]:::role
-  rALT["👤 << service>>\nSysteme d'alternance"]:::role
+  rU["Utilisateur"]:::role
+  rAPP["<< service>>\nApplication mobile"]:::role
+  rBAL["<< service>>\nBalise LoRa"]:::role
+  rESP["<< service>>\nESP32-S3 LoRa"]:::role
+  rARD["<< service>>\nArduino Uno"]:::role
+  rALT["<< service>>\nSysteme d'alternance"]:::role
 
   subgraph S["Systeme de communication LoRa/Bluetooth"]
     direction TB
@@ -36,12 +36,7 @@ flowchart LR
     ucScan -. include .-> ucSelectAntenna
   end
 
-  rU --- ucConnect
-  rU --- ucSend
-  rU --- ucReceive
-  rU --- ucStatus
-  rU --- ucData
-  rU --- ucSelectAntenna
+  rU --- rAPP
 
   ucConnect --- rAPP
   ucSend --- rAPP
