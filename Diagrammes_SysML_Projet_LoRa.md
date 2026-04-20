@@ -45,12 +45,11 @@ flowchart LR
   ucData --- rAPP
 
 
-  ucSend --- rBAL
-  ucReceive --- rBAL
-  ucStatus --- rBAL
+
 
 
   ucSend --- rESP
+  uStatus --rESP
   ucReceive --- rESP
   ucData --- rESP
   ucSelectAntenna --- rESP
