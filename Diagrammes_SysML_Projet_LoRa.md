@@ -54,7 +54,7 @@ flowchart LR
   ucReceive --- rESP
   ucData --- rESP
   ucSelectAntenna --- rESP
-  ucScan --- rESP
+
 
   ucScan --- rARD
   ucSelectAntenna --- rALT
