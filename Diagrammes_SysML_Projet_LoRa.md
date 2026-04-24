@@ -19,6 +19,7 @@ flowchart LR
 
   subgraph S["Balise LoRa"]
     direction TB
+    uCo([BALISE Bluetooth])
     ucSend([Envoyer un message texte])
     ucReceive([Recevoir un message texte])
     ucStatus([Consulter l'etat du lien])
@@ -26,10 +27,10 @@ flowchart LR
     ucSelectAntenna([Choisir antenne Omni/Dir])
     ucScan([Lancer balayage])
 
-    ucSend -. include .-> rcConnect
-    ucReceive -. include .-> rcConnect
-    ucStatus -. include .-> rcConnect
-    ucData -. include .-> rcConnect
+    ucSend -. include .-> uCo
+    ucReceive -. include .-> uCo
+    ucStatus -. include .-> uCo
+    ucData -. include .-> uCo
     ucSelectAntenna -. include .-> ucData
     ucScan -. include .-> ucSelectAntenna
   end
