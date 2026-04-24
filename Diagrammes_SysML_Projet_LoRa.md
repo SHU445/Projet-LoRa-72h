@@ -24,7 +24,7 @@ flowchart LR
     ucStatus([Consulter l'etat du lien])
     ucData([Consulter des donnees balise])
     ucSelectAntenna([Choisir antenne Omni/Dir])
-    ucScan([Lancer balayage directionnel])
+    ucScan([Lancer balayage])
 
     ucSend -. include .-> ucConnect
     ucReceive -. include .-> ucConnect
@@ -35,7 +35,8 @@ flowchart LR
   end
 
   rU --- rAPP
-  rAPP --- rESP
+  rAPP --- Uconnect
+  Uconnect --- rESP
 
   ucSend --- rESP
   uStatus --rESP
