@@ -22,9 +22,9 @@ flowchart LR
     ucSend([Envoyer un message texte])
     ucReceive([Recevoir un message texte])
     ucStatus([Consulter l'etat du lien])
-    ucData([Consulter des donnees balise])
-    ucSelectAntenna([Choisir antenne Omni/Dir])
-    ucScan([Lancer balayage])
+    ucData([Donnees balise])
+    ucSelectAntenna([SELECT antenne Omni/Dir])
+    ucScan([Balayage])
     ucRssi([Transfert RSSI])
 
     ucSend -. include .-> rESP
