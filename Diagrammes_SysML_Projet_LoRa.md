@@ -25,6 +25,7 @@ flowchart LR
     ucData([Consulter des donnees balise])
     ucSelectAntenna([Choisir antenne Omni/Dir])
     ucScan([Lancer balayage])
+    ucRssi([Transfert RSSI])
 
     ucSend -. include .-> rESP
     ucReceive -. include .-> rESP
@@ -32,6 +33,7 @@ flowchart LR
     ucData -. include .-> rESP
     ucSelectAntenna -. include .-> ucData
     ucScan -. include .-> ucSelectAntenna
+    rESP -. include .-> ucRssi
   end
 
   rU --- rAPP
