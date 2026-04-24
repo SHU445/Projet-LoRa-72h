@@ -15,7 +15,6 @@ flowchart LR
   rAPP["<< service>>\nApplication mobile"]:::role
   rESP["<< service>>\nESP32-S3 LoRa"]:::role
   rARD["<< service>>\nArduino Uno"]:::role
-  rALT["<< service>>\nSysteme d'alternance"]:::role
 
   subgraph S["Balise LoRa"]
     direction TB
@@ -46,7 +45,6 @@ flowchart LR
 
 
   ucScan --- rARD
-  ucSelectAntenna --- rALT
 
   classDef role stroke-width:0px;
 ```
@@ -222,4 +220,33 @@ stateDiagram-v2
     CONNECTED --> NOT_CONNECTED: perte lien / deconnexion
     LISTENING --> NOT_CONNECTED: annulation
     NOT_CONNECTED --> [*]: arret systeme
+```
+
+## 7) Schema de fonctionnement global
+
+```mermaid
+flowchart TD
+    U[Utilisateur] --> APP[Application mobile]
+    APP -->|Bluetooth| ESP[Balise ESP32-S3 LoRa]
+
+    ESP --> ALT[Systeme d'alternance]
+    ALT --> DECIDE{Antenne choisie ?}
+    DECIDE -->|Omnidirectionnelle| AO[Antenne Omni]
+    DECIDE -->|Directionnelle| ALT
+    ALT --> AD[Antenne Directionnelle]
+    ESP --> ARD[Arduino Uno]
+    ARD --> ROT[Rotation / Balayage]
+    ROT --> AD
+
+    AO --> TX[Transmission / Reception radio]
+    AD --> TX
+
+    TX --> ESP
+    ESP -->|Ack + etat liaison + donnees| APP
+    APP --> AFF[Affichage message, statut, donnees]
+    AFF --> U
+
+    BAT[Batterie] --> ESP
+    BAT --> ALT
+    BAT --> ARD
 ```
