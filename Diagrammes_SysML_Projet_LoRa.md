@@ -46,7 +46,7 @@ flowchart LR
   ucData ---> rESP
   ucSelectAntenna ---> rESP
 
-  ucScan ---> rARD
+  rARD ---> ucScan
 
   classDef role stroke-width:0px;
 ```
