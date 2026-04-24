@@ -44,7 +44,7 @@ flowchart LR
   rCONN ---> rESP
 
   ucData ---> rESP
-  ucSelectAntenna ---> rESP
+  ucSelectAntenna -. RSSI --> rESP
 
   rARD ---> ucScan
 
