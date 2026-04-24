@@ -12,10 +12,10 @@ Regrouper diagrammes projet:
 ```mermaid
 flowchart LR
   rU["Utilisateur"]:::role
-  rAPP["<< service>>\nApplication mobile"]:::role
-  rESP["<< service>>\nESP32-S3 LoRa"]:::role
-  rARD["<< service>>\nArduino Uno"]:::role
-  rCONN["<< service>>\nSe connecter a la balise Bluetoot"]:::role
+  rAPP["<<Service>>\nApplication mobile"]:::role
+  rESP["<<Service>>\nESP32-S3 LoRa"]:::role
+  rARD["<<Service>>\nArduino Uno"]:::role
+  rCONN["<<BALISE>>\nSe connecter a la balise Bluetoot"]:::role
 
   subgraph S["Balise LoRa"]
     direction TB
