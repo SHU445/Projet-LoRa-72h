@@ -26,17 +26,17 @@ flowchart LR
     ucSelectAntenna([Choisir antenne Omni/Dir])
     ucScan([Lancer balayage])
 
-    ucSend -. include .-> ucConnect
-    ucReceive -. include .-> ucConnect
-    ucStatus -. include .-> ucConnect
-    ucData -. include .-> ucConnect
+    ucSend -. include .-> rcConnect
+    ucReceive -. include .-> rcConnect
+    ucStatus -. include .-> rcConnect
+    ucData -. include .-> rcConnect
     ucSelectAntenna -. include .-> ucData
     ucScan -. include .-> ucSelectAntenna
   end
 
   rU --- rAPP
   rAPP --- rconnect
-  Uconnect --- rESP
+  rconnect --- rESP
 
   ucSend --- rESP
   uStatus --rESP
