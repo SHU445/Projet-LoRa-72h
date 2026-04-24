@@ -15,10 +15,10 @@ flowchart LR
   rAPP["<< service>>\nApplication mobile"]:::role
   rESP["<< service>>\nESP32-S3 LoRa"]:::role
   rARD["<< service>>\nArduino Uno"]:::role
+  rConnect([Se connecter a la balise Bluetooth])
 
   subgraph S["Balise LoRa"]
     direction TB
-    ucConnect([Se connecter a la balise Bluetooth])
     ucSend([Envoyer un message texte])
     ucReceive([Recevoir un message texte])
     ucStatus([Consulter l'etat du lien])
