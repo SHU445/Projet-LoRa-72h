@@ -29,7 +29,6 @@ flowchart LR
     ucScan([Balayage])
     ucRssi([Transfert RSSI])
 
-    rESP -. include .-> ucSend
     ucReceive -. include .-> rESP
     ucStatus -. include .-> rESP
     ucData -. include .-> rESP
