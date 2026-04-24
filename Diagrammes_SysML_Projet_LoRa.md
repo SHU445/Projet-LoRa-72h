@@ -29,6 +29,7 @@ flowchart LR
     ucScan([Balayage])
     ucRssi([Transfert RSSI])
 
+    rESP .-> ucSend
     ucReceive -. include .-> rESP
     ucStatus -. include .-> rESP
     ucData -. include .-> rESP
@@ -41,7 +42,6 @@ flowchart LR
   rAPP --- rCONN
   rCONN --- rESP
 
-  ucSend --- rESP
   ucData --- rESP
   ucSelectAntenna --- rESP
 
