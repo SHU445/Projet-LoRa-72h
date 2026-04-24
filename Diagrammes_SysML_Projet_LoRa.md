@@ -15,7 +15,7 @@ flowchart LR
   rAPP["<< service>>\nApplication mobile"]:::role
   rESP["<< service>>\nESP32-S3 LoRa"]:::role
   rARD["<< service>>\nArduino Uno"]:::role
-  rCONN["<< service>>\nSe connecter a la balise Bluetoot03"]:::role
+  rCONN["<< service>>\nSe connecter a la balise Bluetoot"]:::role
 
   subgraph S["Balise LoRa"]
     direction TB
@@ -27,10 +27,10 @@ flowchart LR
     ucSelectAntenna([Choisir antenne Omni/Dir])
     ucScan([Lancer balayage])
 
-    ucSend -. include .-> uCo
-    ucReceive -. include .-> uCo
-    ucStatus -. include .-> uCo
-    ucData -. include .-> uCo
+    ucSend -. include .-> rCONN
+    ucReceive -. include .-> rCONN
+    ucStatus -. include .-> rCONN
+    ucData -. include .-> rCONN
     ucSelectAntenna -. include .-> ucData
     ucScan -. include .-> ucSelectAntenna
   end
