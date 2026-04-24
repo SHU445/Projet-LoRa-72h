@@ -35,7 +35,7 @@ flowchart LR
   end
 
   rU --- rAPP
-  rAPP --- Uconnect
+  rAPP --- rconnect
   Uconnect --- rESP
 
   ucSend --- rESP
