@@ -39,14 +39,14 @@ flowchart LR
     rOTB ---> ucReceive
   end
 
-  rU --- rAPP
-  rAPP --- rCONN
-  rCONN --- rESP
+  rU ---> rAPP
+  rAPP ---> rCONN
+  rCONN ---> rESP
 
-  ucData --- rESP
-  ucSelectAntenna --- rESP
+  ucData ---> rESP
+  ucSelectAntenna ---> rESP
 
-  ucScan --- rARD
+  ucScan ---> rARD
 
   classDef role stroke-width:0px;
 ```
