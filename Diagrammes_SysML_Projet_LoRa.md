@@ -34,7 +34,7 @@ flowchart LR
     ucStatus -. include .-> rESP
     ucData -. include .-> rESP
     ucSelectAntenna -. include .-> ucData
-    uScan ---> ucSelectAntenna
+    ucScan ---> ucSelectAntenna
     rESP ---> ucRssi ---> rARD
     rOTB ---> ucReceive
   end
