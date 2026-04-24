@@ -17,6 +17,8 @@ flowchart LR
   rARD["<< Service>>\nArduino Uno"]:::role
   rCONN["<< BALISE>>\nSe connecter a la balise Bluetoot"]:::role
 
+  rOTB["<< BALISE>>\nBalise annexe"]:::role
+
   subgraph S["Balise LoRa"]
     direction TB
     ucSend([Envoyer un message texte])
@@ -27,7 +29,7 @@ flowchart LR
     ucScan([Balayage])
     ucRssi([Transfert RSSI])
 
-    ucSend -. include .-> rESP
+    rESP -. include .-> ucSend
     ucReceive -. include .-> rESP
     ucStatus -. include .-> rESP
     ucData -. include .-> rESP

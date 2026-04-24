@@ -1,0 +1,521 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="WnItYE6i5gsdkuGLhjZ0">
+    <mxGraphModel dx="1962" dy="1222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" value="" vertex="1">
+          <mxGeometry height="300" width="640" x="80.00001220703126" y="80.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;BDD&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="40" x="80.00001220703126" y="80.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;La balise&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="340.00001220703126" y="100.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Boitier" vertex="1">
+          <mxGeometry height="60" width="120" x="100.00001220703126" y="200.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Alimentation" vertex="1">
+          <mxGeometry height="60" width="120" x="240.00001220703126" y="200.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Émetteur/récepteur&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="550.0000122070312" y="200.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-8" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160.00001220703126" y="200.00001220703126" as="sourcePoint" />
+            <mxPoint x="160.00001220703126" y="180.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-9" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="0scMQaBXxzPgTIn-gaJo-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400.00001220703126" y="180.00001220703126" as="sourcePoint" />
+            <mxPoint x="400.00001220703126" y="180.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-10" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="309.77001220703124" y="200.00001220703126" as="sourcePoint" />
+            <mxPoint x="309.77001220703124" y="180.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-11" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="160.00001220703126" y="180.00001220703126" as="sourcePoint" />
+            <mxPoint x="610.0000122070312" y="180.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-12" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="159.77001220703124" y="300.00001220703126" as="sourcePoint" />
+            <mxPoint x="159.77001220703124" y="260.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;LED&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="100.00001220703126" y="300.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ESP32-S3" vertex="1">
+          <mxGeometry height="60" width="80" x="520.0000122070312" y="300.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Antennes&lt;/div&gt;&lt;div&gt;LoRa&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="620.0000122070312" y="300.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-16" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560.0000122070312" y="280.00001220703126" as="sourcePoint" />
+            <mxPoint x="660.0000122070312" y="280.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-17" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="610.0000122070312" y="280.00001220703126" as="sourcePoint" />
+            <mxPoint x="610.0000122070312" y="260.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-18" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="559.4300122070313" y="300.00001220703126" as="sourcePoint" />
+            <mxPoint x="560.0000122070312" y="280.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-19" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660.0000122070312" y="300.00001220703126" as="sourcePoint" />
+            <mxPoint x="660.0000122070312" y="280.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-20" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="299.77001220703124" y="300.00001220703126" as="sourcePoint" />
+            <mxPoint x="299.77001220703124" y="260.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="240.00001220703126" y="300.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-22" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="610.0000122070312" y="200.00001220703126" as="sourcePoint" />
+            <mxPoint x="610.0000122070312" y="180.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Connectivité" vertex="1">
+          <mxGeometry height="60" width="120" x="380.00001220703126" y="200.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-24" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="439.77001220703124" y="200.00001220703126" as="sourcePoint" />
+            <mxPoint x="439.77001220703124" y="180.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-25" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="439.77001220703124" y="300.00001220703126" as="sourcePoint" />
+            <mxPoint x="439.77001220703124" y="260.00001220703126" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="HC05" vertex="1">
+          <mxGeometry height="60" width="120" x="380.00001220703126" y="300.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Requirements" vertex="1">
+          <mxGeometry height="20" width="80" x="99.00001220703126" y="500.00001220703126" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Exigences Balise LoRa&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="279.00001220703126" y="520.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-29" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="358.7100122070313" y="560.0000122070312" as="sourcePoint" />
+            <mxPoint x="358.7100122070313" y="580.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-30" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="119.00001220703126" y="580.0000122070312" as="sourcePoint" />
+            <mxPoint x="434.00001220703126" y="580.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Ergonomique&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="384.00001220703126" y="600.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-32" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="434.00001220703126" y="600.0000122070312" as="sourcePoint" />
+            <mxPoint x="434.00001220703126" y="580.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-33" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="434.00001220703126" y="640.0000122070312" as="sourcePoint" />
+            <mxPoint x="434.00001220703126" y="660.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-34" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="199.00001220703126" y="660.0000122070312" as="sourcePoint" />
+            <mxPoint x="679.0000122070312" y="660.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Compacte&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="509.00001220703126" y="680.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Déploiement rapide&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="139.00001220703126" y="680.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-37" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="198.71001220703124" y="680.0000122070312" as="sourcePoint" />
+            <mxPoint x="198.71001220703124" y="660.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Doit être déployable&lt;div&gt;en moins de 5 min&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="139.00001220703126" y="720.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Autonomie lisible&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="210" x="466.50001220703126" y="1100.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="La batterie restante du système doit être communiquée à l&#39;utilisateur via l&#39;application et approximable via une led RGB sur la balise." vertex="1">
+          <mxGeometry height="60" width="210" x="466.50001220703126" y="1140.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-41" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="119.00001220703126" y="860.0000122070312" as="sourcePoint" />
+            <mxPoint x="119.00001220703126" y="580.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Besoin énergétique&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="210" x="279.00001220703126" y="680.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-43" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-42" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="379.00001220703126" y="680.0000122070312" as="sourcePoint" />
+            <mxPoint x="384.00001220703126" y="660.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-44" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="559.0000122070312" y="680.0000122070312" as="sourcePoint" />
+            <mxPoint x="559.0000122070312" y="660.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Le système a besoin d&#39;une alimentation pouvant assurer jusqu&#39;à 5V" vertex="1">
+          <mxGeometry height="60" width="210" x="279.00001220703126" y="720.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Angle arrondi&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="629.0000122070312" y="680.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-47" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="679.0000122070312" y="680.0000122070312" as="sourcePoint" />
+            <mxPoint x="679.0000122070312" y="660.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Boitier de la balise" vertex="1">
+          <mxGeometry height="40" width="120" x="559.0000122070312" y="740.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-49" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-48" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="0scMQaBXxzPgTIn-gaJo-46" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="689.0000122070312" y="840.0000122070312" as="sourcePoint" />
+            <mxPoint x="739.0000122070312" y="790.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-50" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-48" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="0scMQaBXxzPgTIn-gaJo-35" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="509.00001220703126" y="800.0000122070312" as="sourcePoint" />
+            <mxPoint x="559.0000122070312" y="750.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-51" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="571.2100122070312" y="1200.0000122070312" as="sourcePoint" />
+            <mxPoint x="571.5000122070312" y="1220.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Autonomie mesurable&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="471.50001220703126" y="1220.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="La batterie restante&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;doit être mesurée à l&#39;aide d&#39;un coulombmètre.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="471.50001220703126" y="1260.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Capteur coulombmètre" vertex="1">
+          <mxGeometry height="40" width="100" x="521.5000122070312" y="1320.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-55" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="433.00001220703126" y="880.0000122070312" as="sourcePoint" />
+            <mxPoint x="433.00001220703126" y="860.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Échange balise&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="384.00001220703126" y="880.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-57" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points" />
+            <mxPoint x="434.00001220703126" y="920.0000122070312" as="sourcePoint" />
+            <mxPoint x="434.00001220703126" y="940.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-58" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="281.50001220703126" y="940.0000122070312" as="sourcePoint" />
+            <mxPoint x="571.5000122070312" y="940.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-59" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="571.3800122070313" y="1320.0000122070312" as="sourcePoint" />
+            <mxPoint x="571.3800122070313" y="1300.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Piles" vertex="1">
+          <mxGeometry height="40" width="60" x="354.00001220703126" y="800.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-61" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="383.88001220703126" y="800.0000122070312" as="sourcePoint" />
+            <mxPoint x="383.88001220703126" y="780.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Connexion bluetooth&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="296.50001220703126" y="1440.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Communication Bluetooth&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="210" x="261.50001220703126" y="1320.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="La balise doit être capable de transmettre et recevoir de l&#39;information via capteur bluetooth" vertex="1">
+          <mxGeometry height="60" width="210" x="261.50001220703126" y="1360.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-65" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points" />
+            <mxPoint x="366.2100122070313" y="1420.0000122070312" as="sourcePoint" />
+            <mxPoint x="366.2100122070313" y="1440.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="HC05" vertex="1">
+          <mxGeometry height="40" width="60" x="336.50001220703126" y="1500.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-67" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="366.38001220703126" y="1500.0000122070312" as="sourcePoint" />
+            <mxPoint x="366.38001220703126" y="1480.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Choisir avec quelle balise communiquer&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="180" x="191.50001220703126" y="1100.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-69" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="281.3300122070313" y="960.0000122070312" as="sourcePoint" />
+            <mxPoint x="281.3300122070313" y="940.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Échange de messages&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="211.50001220703126" y="1020.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Accéder aux&amp;nbsp;&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;informations de la balise&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="170" x="486.50001220703126" y="960.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Enregistrer les conversations&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="180" x="191.50001220703126" y="960.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-73" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="571.2600122070312" y="960.0000122070312" as="sourcePoint" />
+            <mxPoint x="571.2600122070312" y="940.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;requirement&amp;gt;&amp;gt;&lt;div&gt;&lt;b&gt;Localiser les balises alentours&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="180" x="191.50001220703126" y="1190.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Via une carte ou une liste" vertex="1">
+          <mxGeometry height="20" width="180" x="191.50001220703126" y="1150.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-76" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points" />
+            <mxPoint x="281.2100122070313" y="1170.0000122070312" as="sourcePoint" />
+            <mxPoint x="281.2100122070313" y="1190.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-77" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="0scMQaBXxzPgTIn-gaJo-39" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points" />
+            <mxPoint x="571.2100122070312" y="1030.0000122070312" as="sourcePoint" />
+            <mxPoint x="571.5000122070312" y="1080.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-78" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points" />
+            <mxPoint x="351.1000122070313" y="1230.0000122070312" as="sourcePoint" />
+            <mxPoint x="351.1000122070313" y="1250.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-79" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Nom, distance, batterie" vertex="1">
+          <mxGeometry height="20" width="170" x="486.50001220703126" y="1010.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-80" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points" />
+            <mxPoint x="281.26001220703125" y="1060.0000122070312" as="sourcePoint" />
+            <mxPoint x="281.26001220703125" y="1080.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-81" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=sysMLPackCont;startSize=12;endArrow=none;rounded=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points" />
+            <mxPoint x="281.26001220703125" y="1000.0000122070312" as="sourcePoint" />
+            <mxPoint x="281.26001220703125" y="1020.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-82" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="281.50001220703126" y="1080.0000122070312" as="sourcePoint" />
+            <mxPoint x="571.5000122070312" y="1080.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-83" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="351.50001220703126" y="1250.0000122070312" as="sourcePoint" />
+            <mxPoint x="391.50001220703126" y="1250.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-84" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-68" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="461.50001220703126" y="1060.0000122070312" as="sourcePoint" />
+            <mxPoint x="281.50001220703126" y="1080.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-85" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.429;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="391.50001220703126" y="1250.0000122070312" as="sourcePoint" />
+            <mxPoint x="391.50001220703126" y="1080.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-86" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-63" style="endArrow=none;html=1;rounded=0;exitX=0.524;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="371.50001220703126" y="1270.0000122070312" as="sourcePoint" />
+            <mxPoint x="371.50001220703126" y="1250.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Antennes Lora" vertex="1">
+          <mxGeometry height="40" width="100" x="231.50001220703126" y="1250.0000122070312" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-88" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="281.38001220703126" y="1250.0000122070312" as="sourcePoint" />
+            <mxPoint x="281.38001220703126" y="1230.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-89" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="119.00001220703126" y="860.0000122070312" as="sourcePoint" />
+            <mxPoint x="433.00001220703126" y="860.0000122070312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-90" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;strokeColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="480" width="720" x="930.0000122070312" y="849.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-91" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(#FFFFFF,#FFFFFF);" value="Utilisateur" vertex="1">
+          <mxGeometry height="80" width="40" x="990.0000122070312" y="969.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=light-dark(#000000,#000000);" value="" vertex="1">
+          <mxGeometry height="400" width="400" x="1090.0000122070312" y="889.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-93" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=light-dark(#000000,#000000);align=center;" value="Use Case" vertex="1">
+          <mxGeometry height="20" width="80" x="930.0000122070312" y="849.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-94" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Balise LoRa" vertex="1">
+          <mxGeometry height="20" width="80" x="1250.0000122070312" y="889.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-95" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Repérer les&lt;div&gt;balises aux&lt;/div&gt;&lt;div&gt;alentours&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1310.0000122070312" y="1169.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-96" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="0scMQaBXxzPgTIn-gaJo-95" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-97" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Établir une&lt;div&gt;communication&lt;/div&gt;&lt;div&gt;entre balises&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1310.0000122070312" y="1049.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-98" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Se connecter&lt;div&gt;à&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;l&#39;application&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1150.0000122070312" y="1169.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-99" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=light-dark(#000000,#000000);" value="- Actor -&lt;div&gt;Application&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="970.0000122070312" y="1129.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-100" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=light-dark(#000000,#000000);" value="- Actor -&lt;div&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;Autre(s)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;balise(s)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="1530.0000122070312" y="1049.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-101" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Communication&lt;div&gt;full duplex&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1230.0000122070312" y="929.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-102" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="0scMQaBXxzPgTIn-gaJo-98" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-103" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Consulter l&#39;état&lt;div&gt;de la balise&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1150.0000122070312" y="1049.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-104" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-101" style="endArrow=classic;html=1;rounded=0;exitX=0.795;exitY=0.946;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;exitPerimeter=0;" target="0scMQaBXxzPgTIn-gaJo-97" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1270.0000122070312" y="1079.999951171875" as="sourcePoint" />
+            <mxPoint x="1320.0000122070312" y="1029.999951171875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-105" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0scMQaBXxzPgTIn-gaJo-101" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1030.0000122070312" y="1009.999951171875" as="sourcePoint" />
+            <mxPoint x="1080.0000122070312" y="969.999951171875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-106" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0scMQaBXxzPgTIn-gaJo-103" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1030.0000122070312" y="1009.999951171875" as="sourcePoint" />
+            <mxPoint x="1230.0000122070312" y="969.999951171875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-107" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-99" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0scMQaBXxzPgTIn-gaJo-103" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1070.0000122070312" y="1159.999951171875" as="sourcePoint" />
+            <mxPoint x="1120.0000122070312" y="1109.999951171875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-108" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-98" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="0scMQaBXxzPgTIn-gaJo-99" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="990.0000122070312" y="1279.999951171875" as="sourcePoint" />
+            <mxPoint x="1040.0000122070312" y="1229.999951171875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-109" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-101" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0scMQaBXxzPgTIn-gaJo-100" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1390.0000122070312" y="999.999951171875" as="sourcePoint" />
+            <mxPoint x="1440.0000122070312" y="949.999951171875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-110" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-97" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="0scMQaBXxzPgTIn-gaJo-100" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1550.0000122070312" y="1239.999951171875" as="sourcePoint" />
+            <mxPoint x="1600.0000122070312" y="1189.999951171875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-111" edge="1" parent="1" source="0scMQaBXxzPgTIn-gaJo-95" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0scMQaBXxzPgTIn-gaJo-100" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1470.0000122070312" y="1219.999951171875" as="sourcePoint" />
+            <mxPoint x="1520.0000122070312" y="1169.999951171875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-112" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="include" vertex="1">
+          <mxGeometry height="20" width="60" x="1150.0000122070312" y="1139.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-113" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="include" vertex="1">
+          <mxGeometry height="20" width="60" x="1310.0000122070312" y="1139.999951171875" as="geometry" />
+        </mxCell>
+        <mxCell id="0scMQaBXxzPgTIn-gaJo-114" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="include" vertex="1">
+          <mxGeometry height="20" width="60" x="1290.0000122070312" y="1019.999951171875" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
