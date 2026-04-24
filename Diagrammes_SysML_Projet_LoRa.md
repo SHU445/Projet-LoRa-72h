@@ -19,7 +19,6 @@ flowchart LR
 
   subgraph S["Balise LoRa"]
     direction TB
-    uCo([BALISE Bluetooth])
     ucSend([Envoyer un message texte])
     ucReceive([Recevoir un message texte])
     ucStatus([Consulter l'etat du lien])
@@ -40,10 +39,8 @@ flowchart LR
   rCONN --- rESP
 
   ucSend --- rESP
-  uStatus --rESP
   ucData --- rESP
   ucSelectAntenna --- rESP
-
 
   ucScan --- rARD
 
