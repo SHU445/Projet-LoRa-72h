@@ -15,7 +15,7 @@ flowchart LR
   rAPP["<< service>>\nApplication mobile"]:::role
   rESP["<< service>>\nESP32-S3 LoRa"]:::role
   rARD["<< service>>\nArduino Uno"]:::role
-  rConnect["<< service>>\nSe connecter a la balise Bluetoot03"]:::role
+  rCONN["<< service>>\nSe connecter a la balise Bluetoot03"]:::role
 
   subgraph S["Balise LoRa"]
     direction TB
@@ -36,8 +36,8 @@ flowchart LR
   end
 
   rU --- rAPP
-  rAPP --- rconnect
-  rconnect --- rESP
+  rAPP --- rCONN
+  rCONN --- rESP
 
   ucSend --- rESP
   uStatus --rESP
