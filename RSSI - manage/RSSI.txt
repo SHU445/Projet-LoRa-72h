@@ -1,0 +1,25 @@
+Utilisation de l'API de Mesh
+
+RSSI :
+[https://www.data-alliance.net/fr/rssi-et-performances-dantenne-et-applications-sans-fil-iot?srsltid=AfmBOooWYtNZhvGKsaWdTr1C4Tiq-6sXP9CxdQ_QVxnavq-Okwu8ZjDp]
+
+Points clés sur RSSI:
+
+    Unité de mesure: Généralement exprimée en dBm (décibels-milliwatts), bien qu'elle soit parfois présentée sous forme de valeur brute (par exemple, de 0 à 255) en fonction du matériel ou du logiciel utilisé.
+    Échelle: Généralement un nombre négatif en dBm; Plus proche de 0 signifie un signal plus fort. Par exemple:
+        -30 dBm: Excellent signal (très fort)
+        -67 dBm: Bon signal (acceptable pour la plupart des applications)
+        -80 dBm: Signal faible (peut fonctionner mais peut être instable)
+        -90 dBm: Signal très faible ou inutilisable
+    Objectif: Permet de déterminer la qualité de la connexion, la portée et la stabilité. Une valeur RSSI plus élevée (plus proche de 0) indique généralement une meilleure qualité de signal.
+
+    Commande :
+    (bash)
+    AT+RSSI? # to Check RSSI on a LoRa Module
+
+     
+
+ressource :
+https://github.com/hallard/WeMos-Lora
+https://github.com/SensorsIot/Antenna-Tester
+https://meshtastic.org/docs/hardware/antennas/antenna-testing/#signal-strength-testing
